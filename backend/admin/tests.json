@@ -1,0 +1,6 @@
+{
+  "tests": [
+    {"name": "Admin unauthorized", "method": "GET", "path": "/orders", "expectedStatus": 403, "expectedBody": {"error": "string"}, "bodyMatcher": "partial"},
+    {"name": "Admin stats unauthorized", "method": "GET", "path": "/stats", "expectedStatus": 403, "expectedBody": {"error": "string"}, "bodyMatcher": "partial"}
+  ]
+}

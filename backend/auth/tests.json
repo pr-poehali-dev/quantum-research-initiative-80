@@ -1,0 +1,6 @@
+{
+  "tests": [
+    {"name": "Register user", "method": "POST", "path": "/register", "body": {"phone": "+79001234567", "name": "Test User", "password": "test123"}, "expectedStatus": 200, "expectedBody": {"session_id": "string"}, "bodyMatcher": "partial"},
+    {"name": "Login user", "method": "POST", "path": "/login", "body": {"phone": "+79001234567", "password": "test123"}, "expectedStatus": 200, "expectedBody": {"session_id": "string"}, "bodyMatcher": "partial"}
+  ]
+}

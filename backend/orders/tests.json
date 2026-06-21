@@ -1,0 +1,6 @@
+{
+  "tests": [
+    {"name": "Create order", "method": "POST", "path": "/create", "body": {"client_name": "Test", "client_phone": "+79001234567", "device_category": "iPhone", "device_model": "iPhone 14", "repair_type": "Замена экрана"}, "expectedStatus": 200, "expectedBody": {"ok": true}, "bodyMatcher": "partial"},
+    {"name": "Check order status", "method": "GET", "path": "/status?number=IP-1000", "expectedStatus": 404, "expectedBody": {"error": "string"}, "bodyMatcher": "partial"}
+  ]
+}

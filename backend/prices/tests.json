@@ -1,0 +1,6 @@
+{
+  "tests": [
+    {"name": "Get categories", "method": "GET", "path": "/categories", "expectedStatus": 200, "expectedBody": {"categories": []}, "bodyMatcher": "partial"},
+    {"name": "Get models", "method": "GET", "path": "/models?slug=iphone", "expectedStatus": 200, "expectedBody": {"models": []}, "bodyMatcher": "partial"}
+  ]
+}

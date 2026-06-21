@@ -1,0 +1,8 @@
+{
+  "tests": [
+    {"name": "Get settings", "method": "GET", "path": "/settings", "expectedStatus": 200, "expectedBody": {"settings": {}}, "bodyMatcher": "partial"},
+    {"name": "Get cities", "method": "GET", "path": "/cities", "expectedStatus": 200, "expectedBody": {"cities": []}, "bodyMatcher": "partial"},
+    {"name": "Get reviews", "method": "GET", "path": "/reviews", "expectedStatus": 200, "expectedBody": {"reviews": []}, "bodyMatcher": "partial"},
+    {"name": "Get loyalty", "method": "GET", "path": "/loyalty", "expectedStatus": 200, "expectedBody": {"levels": []}, "bodyMatcher": "partial"}
+  ]
+}
